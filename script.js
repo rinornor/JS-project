@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 const input = document.getElementById("input");
 const todosUL = document.getElementById("todos");
 
-// 
+// Gets the items from localStorage 
 const todos = JSON.parse(localStorage.getItem("todos"));
 
 if (todos) {
@@ -26,6 +26,7 @@ function addTodo(todo) {
 
     if (todoText) {
         const todoEl = document.createElement("li");
+        // Check if todo and also is this todo completed or not so it can render to the DOM
         if (todo && todo.completed) {
             todoEl.classList.add("completed");
         }
