@@ -15,9 +15,9 @@ body {
     min-height: 100vh;
 }
 
-h2 {
+h1 {
     color: rgb(155, 98, 41);
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     opacity: 0.4;
 }
